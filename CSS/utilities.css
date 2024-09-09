@@ -1,0 +1,125 @@
+:root {
+    --primary: #EEBF00;
+    --pure: #fefefe;
+    --ternary: #6C6C6C;
+    --light: #F0F0F0;
+    --secondry: #232B38;
+    --danger: #fe4545;
+    --heaven: #ffffff;
+    --footer: #2d333f;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-centre {
+    justify-content: center;
+}
+
+.items-centre {
+    align-items: center;
+}
+
+.magic-shadow {
+    position: relative;
+    background: var(--heaven);
+}
+
+.magic-shadow:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow.svg);
+    position: absolute;
+    background-position: center;
+    bottom: -22px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.btn {
+    padding: 0.75rem 0.75rem;
+    border-radius: 4px;
+    line-height: 0.8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--heaven);
+}
+
+.btn-secondry {
+    background: var(--secondry);
+    color: var(--heaven);
+}
+
+.section-heading {
+    font-family: "Raleway-bold";
+    text-align: center;
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.section-heading:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: url(../icons/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -40px;
+}
+
+hr {
+    border: 1px solid var(--light);
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+.text-centre {
+    text-align: center;
+}
+
+.magic-shadow-sm {
+    position: relative;
+    background: var(--heaven);
+}
+
+.magic-shadow-sm:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow-sm.svg);
+    position: absolute;
+    background-position: center;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-pure {
+    color: var(--pure);
+}
